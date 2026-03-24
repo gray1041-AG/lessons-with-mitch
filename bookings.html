@@ -18,6 +18,7 @@
   <meta name="twitter:title" content="Book a Live Show | Lessons With Mitch">
   <meta name="twitter:description" content="Solo acoustic sets. Full band performances. Private events. Whatever the stage, Mitch brings the music.">
   <meta name="twitter:image" content="https://mitchdowneymusic.com/assets/images/shows-experience.jpg">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="canonical" href="https://mitchdowneymusic.com/bookings.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,11 +81,12 @@
   <section class="section section--dark-black" id="book">
     <div class="form-wrapper fade-in">
       <h2 class="section-headline section-headline--center">Book Mitch</h2>
-      <p class="form-subhead">Tell me about your event and I'll get back to you.</p>
+      <p class="form-subhead">Tell us about your event. Mitch will be in touch.</p>
       <form id="booking-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="22e51134-f4d4-4c40-bc04-d765cdbb4ac2">
         <input type="hidden" name="subject" value="New Booking Request — Lessons With Mitch">
         <input type="hidden" name="lead_type" value="show-booking">
+        <input type="checkbox" name="botcheck" style="display:none">
         <div class="form-row">
           <div class="form-field">
             <label for="book-name">Your Name <span class="required">*</span></label>
@@ -174,7 +176,7 @@
     </div>
   </footer>
 
-  <script src="bookings.js"></script>
+  <script src="app.js"></script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
