@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Live Show | Lessons With Mitch</title>
+  <meta name="description" content="Book Mitch for solo acoustic sets, full band performances, or private events in Kenosha, WI and beyond.">
+  <meta property="og:title" content="Book a Live Show | Lessons With Mitch">
+  <meta property="og:description" content="Solo acoustic sets. Full band performances. Private events. Whatever the stage, Mitch brings the music.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Section 1: Compact Hero -->
+  <section class="section section--hero section--hero-compact" id="hero">
+    <div class="hero__overlay"></div>
+    <nav class="hero__nav">
+      <span class="hero__nav-brand">LESSONS WITH MITCH</span>
+      <a href="index.html" class="hero__nav-back">&larr; Back to Lessons</a>
+    </nav>
+    <div class="hero__content fade-in">
+      <h1 class="hero__headline">
+        Book a <span class="accent">Live Show</span>
+      </h1>
+      <p class="hero__subhead">Solo acoustic sets. Full band performances. Private events. Whatever the stage, Mitch brings the music.</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Music & Live Experience -->
+  <section class="section section--light-cream" id="experience">
+    <div class="split fade-in">
+      <div class="split__image">
+        <img src="assets/images/shows-experience.jpg" alt="Mitch performing live" loading="lazy">
+      </div>
+      <div class="split__text">
+        <h2 class="section-headline">Music & Live Experience</h2>
+        <p>Outside of teaching, Mitch writes original music and performs regularly — solo shows and full-band performances across the Kenosha area and beyond.</p>
+        <p>His experience on stage means he knows how to read a room, set a vibe, and deliver a set that fits your event.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: What You Get -->
+  <section class="section section--light-tan section--shows-options" id="options">
+    <div class="fade-in" style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2 class="section-headline section-headline--center">What You Get</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <h3 class="service-card__title">Solo Acoustic</h3>
+          <p>Originals and covers. Perfect for restaurants, cafes, and intimate events.</p>
+        </div>
+        <div class="service-card">
+          <h3 class="service-card__title">Full Band</h3>
+          <p>Bigger sound for bigger stages. Bars, venues, festivals, and outdoor events.</p>
+        </div>
+        <div class="service-card">
+          <h3 class="service-card__title">Private Events</h3>
+          <p>Weddings, parties, corporate events. Custom setlist tailored to your occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Booking Form -->
+  <section class="section section--dark-black" id="book">
+    <div class="form-wrapper fade-in">
+      <h2 class="section-headline section-headline--center">Book Mitch</h2>
+      <p class="form-subhead">Tell me about your event and I'll get back to you.</p>
+      <form id="booking-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="22e51134-f4d4-4c40-bc04-d765cdbb4ac2">
+        <input type="hidden" name="subject" value="New Booking Request — Lessons With Mitch">
+        <input type="hidden" name="_lead_type" value="show-booking">
+        <input type="hidden" name="_source_url" value="">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="book-name">Your Name <span class="required">*</span></label>
+            <input type="text" id="book-name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="book-email">Email <span class="required">*</span></label>
+            <input type="email" id="book-email" name="email" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="book-phone">Phone <span class="optional">(optional)</span></label>
+          <input type="tel" id="book-phone" name="phone">
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="event-type">Event Type <span class="required">*</span></label>
+            <select id="event-type" name="event_type" required>
+              <option value="" disabled selected>Select</option>
+              <option value="bar-venue">Bar / Venue</option>
+              <option value="festival">Festival</option>
+              <option value="private">Private Event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="event-date">Event Date</label>
+            <input type="date" id="event-date" name="event_date">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="event-location">Location (City, State)</label>
+            <input type="text" id="event-location" name="event_location">
+          </div>
+          <div class="form-field">
+            <label for="performance-type">Performance Type</label>
+            <select id="performance-type" name="performance_type">
+              <option value="" disabled selected>Select</option>
+              <option value="solo">Solo</option>
+              <option value="full-band">Full Band</option>
+              <option value="not-sure">Not Sure</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="set-length">Set Length Needed</label>
+            <select id="set-length" name="set_length">
+              <option value="" disabled selected>Select</option>
+              <option value="1-hour">1 hour</option>
+              <option value="2-hours">2 hours</option>
+              <option value="3-plus">3+ hours</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="pa-provided">PA / Sound Provided?</label>
+            <select id="pa-provided" name="pa_provided">
+              <option value="" disabled selected>Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="not-sure">Not sure</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="event-details">Tell me about your event</label>
+          <textarea id="event-details" name="event_details" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">Send Booking Request</button>
+      </form>
+      <div id="form-success" class="form-success" hidden>
+        <h3>Request sent!</h3>
+        <p>Mitch will be in touch about your event.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <span>Lessons With Mitch &middot; Kenosha, WI</span>
+      <div class="footer__links">
+        <a href="index.html">Lessons</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bookings.js"></script>
+</body>
+</html>
