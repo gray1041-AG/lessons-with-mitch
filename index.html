@@ -8,6 +8,18 @@
   <meta property="og:title" content="Lessons With Mitch | Guitar, Bass & Ukulele Lessons in Kenosha, WI">
   <meta property="og:description" content="Music lessons that focus on growth, expression, and confidence on your instrument.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mitchdowneymusic.com/">
+  <meta property="og:image" content="https://mitchdowneymusic.com/assets/images/hero.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Lessons With Mitch">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lessons With Mitch | Guitar, Bass & Ukulele Lessons in Kenosha, WI">
+  <meta name="twitter:description" content="Music lessons that focus on growth, expression, and confidence on your instrument.">
+  <meta name="twitter:image" content="https://mitchdowneymusic.com/assets/images/hero.jpg">
+  <meta name="google-site-verification" content="a0Aeccu2K4EHD9_X6qhireBO-YwUjE4WFwfIbBeel_c">
+  <link rel="canonical" href="https://mitchdowneymusic.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -171,8 +183,7 @@
       <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="22e51134-f4d4-4c40-bc04-d765cdbb4ac2">
         <input type="hidden" name="subject" value="New Lesson Inquiry — Lessons With Mitch">
-        <input type="hidden" name="_lead_type" value="">
-        <input type="hidden" name="_source_url" value="">
+        <input type="hidden" name="lead_type" value="lesson-inquiry">
         <div class="form-row">
           <div class="form-field">
             <label for="first-name">First Name <span class="required">*</span></label>
@@ -271,6 +282,51 @@
     </div>
   </section>
 
+  <!-- Section 8: FAQ -->
+  <section class="section section--light-tan" id="faq">
+    <div class="faq-wrapper fade-in">
+      <h2 class="section-headline section-headline--center">Common Questions</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">How much do guitar lessons cost in Kenosha?</summary>
+          <div class="faq-answer">
+            <p>Lessons with Mitch are $25 for a 30-minute session or $50 for a 60-minute session. There are no contracts or commitments — pay per lesson and cancel anytime. Your first lesson is free so you can see if it's a good fit.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What ages do you teach?</summary>
+          <div class="faq-answer">
+            <p>All ages — there's no minimum age and no prerequisites. Mitch teaches kids, teens, and adults at every experience level, from complete beginners to advanced players looking to level up.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Do you teach bass and ukulele too, or just guitar?</summary>
+          <div class="faq-answer">
+            <p>Mitch teaches guitar, bass, and ukulele. Lessons cover chords, music theory, songs you love, songwriting, and performing — adapted to whichever instrument you play.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Where are lessons held?</summary>
+          <div class="faq-answer">
+            <p>In-person lessons are held at The Music Center in Kenosha, WI. Online lessons are also available if you prefer to learn from home. Either format works — pick what's most convenient.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Do I need my own instrument?</summary>
+          <div class="faq-answer">
+            <p>Having your own instrument to practice on at home is ideal, but it's not required to get started. Reach out and Mitch can help point you in the right direction if you need to rent or buy one.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can I book Mitch for a live show or private event?</summary>
+          <div class="faq-answer">
+            <p>Yes — Mitch performs solo acoustic sets and full band shows for bars, venues, festivals, weddings, and private events. <a href="bookings.html">Visit the bookings page</a> to send a request.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer__inner">
@@ -282,5 +338,143 @@
   </footer>
 
   <script src="main.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://mitchdowneymusic.com/#business",
+        "name": "Lessons With Mitch",
+        "description": "Private guitar, bass, and ukulele lessons in Kenosha, WI. All ages and experience levels. Personalized instruction focused on growth, expression, and confidence.",
+        "url": "https://mitchdowneymusic.com",
+        "telephone": "",
+        "email": "",
+        "image": "https://mitchdowneymusic.com/assets/images/hero.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kenosha",
+          "addressRegion": "WI",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.5847,
+          "longitude": -87.8212
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Kenosha",
+          "sameAs": "https://en.wikipedia.org/wiki/Kenosha,_Wisconsin"
+        },
+        "priceRange": "$25-$50",
+        "openingHours": "Mo-Fr",
+        "founder": {
+          "@id": "https://mitchdowneymusic.com/#person"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Music Lessons",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "30-Minute Music Lesson",
+                "description": "Private guitar, bass, or ukulele lesson. In-person or online. All ages and skill levels."
+              },
+              "price": "25.00",
+              "priceCurrency": "USD"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "60-Minute Music Lesson",
+                "description": "Extended private guitar, bass, or ukulele lesson. In-person or online. All ages and skill levels."
+              },
+              "price": "50.00",
+              "priceCurrency": "USD"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://mitchdowneymusic.com/#person",
+        "name": "Mitch Downey",
+        "jobTitle": "Music Instructor & Performer",
+        "description": "Musician, songwriter, and instructor in Kenosha, WI. Teaches guitar, bass, and ukulele to students of all ages and experience levels.",
+        "url": "https://mitchdowneymusic.com",
+        "image": "https://mitchdowneymusic.com/assets/images/about.jpg",
+        "knowsAbout": ["Guitar", "Bass Guitar", "Ukulele", "Music Theory", "Songwriting", "Live Performance"],
+        "worksFor": {
+          "@id": "https://mitchdowneymusic.com/#business"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mitchdowneymusic.com/#website",
+        "name": "Lessons With Mitch",
+        "url": "https://mitchdowneymusic.com"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much do guitar lessons cost in Kenosha?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lessons with Mitch are $25 for a 30-minute session or $50 for a 60-minute session. There are no contracts or commitments — pay per lesson and cancel anytime. Your first lesson is free."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What ages do you teach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All ages — there's no minimum age and no prerequisites. Mitch teaches kids, teens, and adults at every experience level, from complete beginners to advanced players."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you teach bass and ukulele too, or just guitar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mitch teaches guitar, bass, and ukulele. Lessons cover chords, music theory, songs you love, songwriting, and performing — adapted to whichever instrument you play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are guitar lessons held in Kenosha?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In-person lessons are held at The Music Center in Kenosha, WI. Online lessons are also available if you prefer to learn from home."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need my own instrument to start lessons?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Having your own instrument to practice on at home is ideal, but it's not required to get started. Mitch can help point you in the right direction if you need to rent or buy one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book Mitch for a live show or private event?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — Mitch performs solo acoustic sets and full band shows for bars, venues, festivals, weddings, and private events in the Kenosha area and beyond."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </body>
 </html>

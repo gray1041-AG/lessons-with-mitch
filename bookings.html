@@ -8,6 +8,17 @@
   <meta property="og:title" content="Book a Live Show | Lessons With Mitch">
   <meta property="og:description" content="Solo acoustic sets. Full band performances. Private events. Whatever the stage, Mitch brings the music.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mitchdowneymusic.com/bookings.html">
+  <meta property="og:image" content="https://mitchdowneymusic.com/assets/images/shows-experience.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Lessons With Mitch">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Book a Live Show | Lessons With Mitch">
+  <meta name="twitter:description" content="Solo acoustic sets. Full band performances. Private events. Whatever the stage, Mitch brings the music.">
+  <meta name="twitter:image" content="https://mitchdowneymusic.com/assets/images/shows-experience.jpg">
+  <link rel="canonical" href="https://mitchdowneymusic.com/bookings.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&display=swap" rel="stylesheet">
@@ -73,8 +84,7 @@
       <form id="booking-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="22e51134-f4d4-4c40-bc04-d765cdbb4ac2">
         <input type="hidden" name="subject" value="New Booking Request — Lessons With Mitch">
-        <input type="hidden" name="_lead_type" value="show-booking">
-        <input type="hidden" name="_source_url" value="">
+        <input type="hidden" name="lead_type" value="show-booking">
         <div class="form-row">
           <div class="form-field">
             <label for="book-name">Your Name <span class="required">*</span></label>
@@ -165,5 +175,70 @@
   </footer>
 
   <script src="bookings.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MusicGroup",
+        "@id": "https://mitchdowneymusic.com/#performer",
+        "name": "Mitch Downey",
+        "description": "Musician and performer available for solo acoustic sets, full band performances, and private events in the Kenosha, WI area and beyond.",
+        "url": "https://mitchdowneymusic.com/bookings.html",
+        "image": "https://mitchdowneymusic.com/assets/images/shows-experience.jpg",
+        "genre": ["Acoustic", "Rock", "Covers", "Originals"],
+        "location": {
+          "@type": "City",
+          "name": "Kenosha",
+          "sameAs": "https://en.wikipedia.org/wiki/Kenosha,_Wisconsin"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Live Music Booking — Mitch Downey",
+        "description": "Book Mitch Downey for solo acoustic sets, full band performances, or private events including weddings, parties, festivals, and corporate events.",
+        "provider": {
+          "@id": "https://mitchdowneymusic.com/#performer"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": "Wisconsin"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Performance Types",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Solo Acoustic Performance",
+                "description": "Originals and covers. Perfect for restaurants, cafes, and intimate events."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Full Band Performance",
+                "description": "Bigger sound for bigger stages. Bars, venues, festivals, and outdoor events."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Private Event Performance",
+                "description": "Weddings, parties, corporate events. Custom setlist tailored to your occasion."
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
